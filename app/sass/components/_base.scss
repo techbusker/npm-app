@@ -25,11 +25,29 @@ $desktop__up: "only screen and (min-width: 1200px)";
 
 // 3. Variables
 
+// Pixels.
+
+$px_one: 1px;
+$px_two: 2px;
+$px_three: 3px;
+$px_four: 4px;
+$px_five: 5px;
+$px_six: 6px;
+$px_seven: 7px;
+$px_eight: 8px;
+$px_nine: 9px;
+$px_ten: 10px;
+$px_eleven: 11px;
+$px_twelve: 12px;
+$px_thirteen: 13px;
+$px_fourteen: 14px;
+$px_fifteen: 15px;
+
 // Font-sizes.
 
-$font-size-small: 12px;
-$font-size-regular: 16px;
-$font-size-large: 24px;
+$font-size-small: $px_twelve; //// 12px
+$font-size-regular: $px_twelve+$px_four; //// 16px
+$font-size-large: $px_fourteen+$px_ten; //// 24px
 
 // Font-weights.
 
@@ -37,7 +55,7 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 600;
-$font-weight-black: 900;
+$font-weight-black: 700;
 
 // Colors.
 

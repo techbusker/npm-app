@@ -28,18 +28,6 @@ html, body {
 }
 
 // Declaration of Column
-.block-3 {
-  @include make-xs-column(12);
-  @include make-sm-column(3);
-}
-.block-4 {
-  @include make-xs-column(12);
-  @include make-sm-column(4);
-}
-.block-6 {
-  @include make-xs-column(12);
-  @include make-sm-column(6);
-}
 .block-12 {
   @include make-xs-column(12);
   @include make-sm-column(12);
