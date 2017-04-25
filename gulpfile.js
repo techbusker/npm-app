@@ -2,7 +2,6 @@
 var gulp = require('gulp');
 var robots = require('gulp-robots');
 var googleWebFonts = require('gulp-google-webfonts');
-var prettify = require('gulp-jsbeautifier');
 
 /* Download Google fonts to local app.
    Source: https://www.npmjs.com/package/gulp-google-webfonts */
@@ -23,13 +22,6 @@ gulp.task('robots_file', function () {
       disallow: ['cgi-bin/']
     }))
     .pipe(gulp.dest('dist'));
-});
-
-// Beautify HTML files.
-gulp.task('prettify', function() {
-  gulp.src(['./dist/*.html'])
-    .pipe(prettify())
-    .pipe(gulp.dest('./dist'));
 });
 
 // Default
