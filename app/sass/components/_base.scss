@@ -73,11 +73,20 @@ $color-primary: $green;
 *::-moz-selection { color: $white; background-color: $black; }
 *::selection { color: $white; background-color: $black; }
 
-// 5. Font Awesome Icon Insertion
+// 5. Hyperlinks
 
-@mixin icon-before($content) {
-  &::before {
-    content: $content;
-    font-family: "fontawesome";
+@mixin linx($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    transition: all .6s;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
   }
 }

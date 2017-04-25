@@ -1,5 +1,4 @@
-// Declaration of HTML, BODY
-
+// Declaration of Universal overrides
 html, body {
   font-size: 100%;
   font-smoothing: antialiased;
@@ -7,6 +6,16 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// Declaration of Universal styles
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-primary;
+  line-height: 1.5;
+  vertical-align: baseline;
+  background-color: $white;
+  text-rendering: optimizeLegibility;
 }
 
 // Declaration of Container
@@ -21,15 +30,4 @@ html, body {
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
-}
-
-// Declaration of Row
-.stack {
-  @include make-row();
-}
-
-// Declaration of Column
-.block-12 {
-  @include make-xs-column(12);
-  @include make-sm-column(12);
 }
