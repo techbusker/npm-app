@@ -32,7 +32,7 @@
     "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*",
     "styles": "npm run lint-scss && npm run scss && npm run autoprefixer",
     "lint": "eslint app/js/custom.js || true",
-    "uglify": "mkdirp dist/js -p && uglifyjs app/js/custom.js -m -o dist/js/custom.js && uglifyjs app/js/custom.js -m -c -o dist/js/custom.min.js",
+    "uglify": "mkdirp dist/js -p && uglifyjs app/js/custom.js -m -c -o dist/js/custom.js",
     "scripts": "npm run lint && npm run uglify",
     "icons": "svgo -f app/images/icons -o dist/images/icons && svg-sprite-generate -d app/images/icons -o dist/images/sprite.svg",
     "images": "imagemin --plugin=pngquant app/images/* -o dist/images && npm run icons",

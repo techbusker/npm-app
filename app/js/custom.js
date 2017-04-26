@@ -1,0 +1,3 @@
+$(function() {
+  // Script start here...
+})();
