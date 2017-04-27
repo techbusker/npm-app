@@ -5,11 +5,15 @@ var googleWebFonts = require('gulp-google-webfonts');
 
 /* Download Google fonts to local app.
    Source: https://www.npmjs.com/package/gulp-google-webfonts */
-var options = {};
+var options = {
+  fontsDir: '../fonts/',
+	cssDir: './',
+	cssFilename: 'fonts.css'
+};
 gulp.task('google_fonts', function () {
   return gulp.src('./fonts.list')
   	.pipe(googleWebFonts(options))
-  	.pipe(gulp.dest('dist/fonts/vendor'));
+  	.pipe(gulp.dest('dist/css/'));
 });
 
 /* Generate robots.txt file.
