@@ -74,6 +74,7 @@
     "stylelint": "^7.9.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "^0.7.2",
-    "uglify-js": "^2.8.15"
+    "uglify-js": "^2.8.15",
+    "uncss": "^0.14.1"
   }
 }
