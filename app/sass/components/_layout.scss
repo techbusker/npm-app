@@ -1,6 +1,6 @@
 // Declaration of Universal overrides
 html, body {
-  font-size: 100%;
+  font-size: $font-size-base;
   font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
