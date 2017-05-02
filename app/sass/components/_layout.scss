@@ -1,4 +1,7 @@
-// Declaration of Universal overrides
+// LAYOUT.scss
+// Declare responsive grid structure here
+
+// HTML, BODY
 html, body {
   font-size: $font-size-base;
   font-smoothing: antialiased;
@@ -8,7 +11,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Declaration of Universal styles
+// BODY
 body {
   font-family: "Roboto", sans-serif;
   color: $primary-color;
@@ -18,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-// Declaration of Container
+// .CONTAINER
 .container {
   @include container-fixed();
   @media (min-width: $screen-sm-min) {

@@ -1,5 +1,11 @@
-// 1. Media Queries
+// BASE.scss
+// MEDIA QUERIES DECLARATION
+// FONT SIZE MIXIN DECLARATION
+// VARIABLES DECLARATION
+// SELECTION COLOR DECLARATION
+// HYPERLINK MIXIN DECLARATION
 
+// MEDIA QUERIES DECLARATION
 $mobile: "only screen and (max-width: 480px)";
 $phablet: "only screen and (max-width: 768px)";
 $tablet: "only screen and (max-width: 992px)";
@@ -9,24 +15,18 @@ $phablet__up: "only screen and (min-width: 768px)";
 $tablet__up: "only screen and (min-width: 992px)";
 $desktop__up: "only screen and (min-width: 1200px)";
 
-// Useful mixins: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/.
-
-// 2. REM Font Sizes.
-
+// FONT SIZE MIXIN DECLARATION
 @function calculateRem($size) {
   $remSize: $size / $font-size-base;
   @return $remSize * 1rem;
 }
-
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
 }
 
-// 3. Variables
-
-// Pixels.
-
+// VARIABLES DECLARATION
+// PIXELS
 $px_one: 1px;
 $px_two: 2px;
 $px_three: 3px;
@@ -42,40 +42,34 @@ $px_twelve: 12px;
 $px_thirteen: 13px;
 $px_fourteen: 14px;
 $px_fifteen: 15px;
-
-// Font-sizes.
-
+// FONT SIZES
 $font-size-small: $px_twelve; //// 12px
 $font-size-regular: $px_twelve+$px_four; //// 16px
 $font-size-large: $px_fourteen+$px_ten; //// 24px
-
-// Font-weights.
-
+// FONT WEIGHTS
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 600;
 $font-weight-black: 700;
-
-// Colors.
-
+// STANDARD COLORS
 $black: #000;
 $white: #fff;
 $green: #2bca7f;
 $grey: #999;
-
-// Colors init. Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
-
+// USED COLORS.
+// Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
 $primary-color: $grey;
 $secondary-color: $grey;
 
-// 4. Selection Color in Browser - https://css-tricks.com/almanac/selectors/s/selection/
+// SELECTION COLOR DECLARATION - https://css-tricks.com/almanac/selectors/s/selection/
+*::-moz-selection,
+*::selection {
+  color: $white;
+  background-color: $black;
+}
 
-*::-moz-selection { color: $white; background-color: $black; }
-*::selection { color: $white; background-color: $black; }
-
-// 5. Hyperlinks
-
+// HYPERLINK MIXIN DECLARATION
 @mixin linx($link, $visit, $hover, $active) {
   a {
     color: $link;

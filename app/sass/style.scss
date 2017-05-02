@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
-// Roboto
+// ROBOTO
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
 
-// Bootstrap Glyphs
+// GLYPHS
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
-// Universal styles
+// PRIMARY
 @import "components/base";
 @import "components/bootstrap";
 
-// Third party styles
+// PRIMARY - ADDONS
 // @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -22,7 +22,7 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 
-// SMACSS Model
+// SECONDARY
 @import "components/layout";
 @import "components/module";
 @import "components/state";
