@@ -64,9 +64,10 @@ $white: #fff;
 $green: #2bca7f;
 $grey: #999;
 
-// Colors init.
+// Colors init. Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
 
-$color-primary: $grey;
+$primary-color: $grey;
+$secondary-color: $grey;
 
 // 4. Selection Color in Browser - https://css-tricks.com/almanac/selectors/s/selection/
 
