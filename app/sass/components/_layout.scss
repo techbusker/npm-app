@@ -2,23 +2,21 @@
 // Declare responsive grid structure here
 
 // HTML, BODY
-html, body {
-  font-size: $font-size-base;
-  font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 16px;
 }
 
 // BODY
 body {
   font-family: "Roboto", sans-serif;
+  line-height: normal;
   color: $primary-color;
-  line-height: 1.5;
-  vertical-align: baseline;
   background-color: $white;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // .CONTAINER

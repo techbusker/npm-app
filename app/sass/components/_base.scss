@@ -16,13 +16,9 @@ $tablet__up: "only screen and (min-width: 992px)";
 $desktop__up: "only screen and (min-width: 1200px)";
 
 // FONT SIZE MIXIN DECLARATION
-@function calculateRem($size) {
-  $remSize: $size / $font-size-base;
-  @return $remSize * 1rem;
-}
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+@mixin font-size($sizeValue: 16) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue / 16) + rem;
 }
 
 // VARIABLES DECLARATION
