@@ -35,7 +35,7 @@
     "uncss_bootstrap": "uncss dist/*.html -H dist -C css -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"bootstrap.css\" -S \"style.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/bootstrap.min.css",
     "uncss_style": "uncss dist/*.html -C css -H dist -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"style.css\" -S \"bootstrap.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/style.min.css",
     "lint": "eslint app/js/custom.js || true",
-    "uglify": "mkdirp dist/js -p && uglifyjs app/js/custom.js -m -c -o dist/js/custom.js",
+    "uglify": "mkdirp dist/js -p && uglifyjs app/js/custom.js -c -o dist/js/custom.js",
     "scripts": "npm run lint && npm run uglify",
     "icons": "svgo -f app/images/icons -o dist/images/icons && svg-sprite-generate -d app/images/icons -o dist/images/sprite.svg",
     "images": "imagemin --plugin=pngquant app/images/* -o dist/images && npm run icons",
