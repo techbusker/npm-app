@@ -1,4 +1,2 @@
-$(function() {  
-  // Code to run when the document is ready.
-  console.log( "Hello World!" );
-});
+// Code to run when the document is ready.
+console.log( "Hello World!" );
