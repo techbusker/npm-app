@@ -1,3 +1,4 @@
-$(function() {
-  // Script start here...
-})();
+$(function() {  
+  // Code to run when the document is ready.
+  console.log( "Hello World!" );
+});
