@@ -1,7 +1,6 @@
 doctype html
 html(lang="en")
-    head
-        block title
+    head        
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
@@ -15,20 +14,22 @@ html(lang="en")
         meta(property="og:image", content="icons/android-chrome-512x512.png")
         meta(property="og:description", content="This section shows up in Facebook website as description")
         meta(property="og:title", content="Mozilla Developer Network")
+        // Title
+        block title
         // Styles
         link(rel="stylesheet", href="css/fonts.css", media="screen")
         link(rel="stylesheet", href="css/bootstrap.min.css", media="screen")
         link(rel="stylesheet", href="css/vendor/bootstrap-select.min.css", media="screen")
         link(rel="stylesheet", href="css/style.min.css", media="screen")
-        // Scripts
-        script(src="js/vendor/respond.min.js")
-        //- <!--[if lt IE 9]>
+        <!--[if lt IE 9]>
         script(src="js/vendor/html5shiv.min.js")        
-        //- <![endif]-->        
+        script(src="js/vendor/respond.min.js")
+        <![endif]-->        
     block vars
     body(class=bodyClass)
         block content        
         script(src="js/vendor/jquery.min.js")
         script(src="js/vendor/bootstrap.min.js")
         script(src="js/vendor/bootstrap-select.min.js")
+        script(src="js/vendor/bootstrap-fixes.js")
         script(src="js/custom.js")
