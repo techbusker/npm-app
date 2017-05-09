@@ -27,9 +27,12 @@ html(lang="en")
         <![endif]-->        
     block vars
     body(class=bodyClass)
-        block content        
+        block content                
         script(src="js/vendor/jquery.min.js")
         script(src="js/vendor/bootstrap.min.js")
         script(src="js/vendor/bootstrap-select.min.js")
         script(src="js/vendor/bootstrap-fixes.js")
         script(src="js/custom.js")
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js")
+        script(type="text/javascript")
+            | HTMLInspector.inspect()
