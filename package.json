@@ -63,6 +63,7 @@
     "eslint": "^3.18.0",
     "gulp": "^3.9.1",
     "gulp-google-webfonts": "0.0.14",
+    "gulp-humans": "^2.0.2",
     "gulp-robots": "^2.0.4",
     "imagemin-cli": "^3.0.0",
     "imagemin-pngquant": "^5.0.0",

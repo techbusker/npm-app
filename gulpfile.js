@@ -1,6 +1,7 @@
 // Declaration
 var gulp = require('gulp');
 var robots = require('gulp-robots');
+var humans = require('gulp-humans');
 var googleWebFonts = require('gulp-google-webfonts');
 
 /* Download Google fonts to local app.
@@ -28,5 +29,22 @@ gulp.task('robots_file', function () {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('humans_file', function () {
+  gulp.src('./dist/index.html')
+    .pipe(humans({
+      thanks: [
+        'Node (@nodejs on Twitter)',
+        'Gulp (@gulpjs on Twitter)'
+      ],
+      site: [
+        'Standards: HTML5, CSS3',
+        'Components: jQuery, Bootstrap, Fontawesome',
+        'Software: Visual Studio Code'
+      ],
+      note: 'Built with love by Tej Kahlon.'
+    }))
+    .pipe(gulp.dest('./dist/'));
+});
+
 // Default
-gulp.task('default', [ 'robots_file', 'google_fonts']);
+gulp.task('default', [ 'robots_file', 'humans_file', 'google_fonts']);
