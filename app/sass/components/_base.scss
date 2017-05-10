@@ -4,6 +4,8 @@
 // VARIABLES DECLARATION
 // SELECTION COLOR DECLARATION
 // HYPERLINK MIXIN DECLARATION
+// BOOTSTRAP FIXES
+// HELPERS
 
 // MEDIA QUERIES DECLARATION
 $mobile: "only screen and (max-width: 480px)";
@@ -93,3 +95,25 @@ $secondary-color: $grey;
 @-ms-viewport     { width: device-width; }
 @-o-viewport      { width: device-width; }
 @viewport         { width: device-width; }
+
+// HELPERS
+
+/* -- SHORTHAND NOTATIONS
+* background: #000 url(images/bg.gif) no-repeat top right;
+* font: italic bold .8em/1.2 Arial, sans-serif;
+* border: 1px solid #000;
+* margin: 10px 5px 10px 5px;
+*/
+
+/* -- DECLARATION ORDER
+* Positioning, Z-index |||| Box-Model, Floats, Size |||| Typography, Color, Alignment |||| Visual, Border |||| Misc 
+*/
+
+/* -- THIRD PARTY LINKS
+ASCII Codes: http://htmlarrows.com/ |||| http://entity-lookup.leftlogic.com/
+HTML Guide: http://htmlreference.io/
+Pug Guide: https://pugjs.org/api/getting-started.html/
+Outliner: https://gsnedders.html5.org/outliner/
+Semantic Guide: http://codeguide.co/#html
+Table Generator: http://www.tablesgenerator.com/
+*/
