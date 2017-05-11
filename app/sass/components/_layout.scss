@@ -32,3 +32,11 @@ body {
     width: $container-lg;
   }
 }
+
+// RESPONSIVE MEDIA
+img, 
+embed,
+object,
+video {
+  max-width: 100%;
+}
