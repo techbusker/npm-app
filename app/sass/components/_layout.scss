@@ -13,6 +13,7 @@ body {
   color: $primary-color;
   background-color: $white;
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
