@@ -15,12 +15,12 @@
 @import "components/bootstrap";
 
 // PRIMARY - ADDONS
-// @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
 // SECONDARY
 @import "components/layout";
