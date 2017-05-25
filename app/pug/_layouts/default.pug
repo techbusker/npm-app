@@ -1,6 +1,7 @@
 doctype html
 html(lang="en")
     head        
+        block metas
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
@@ -9,11 +10,11 @@ html(lang="en")
         meta(name="robots", content="all")
         //- Meta defined by MDN : https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
         meta(name="author", content="Tej Kahlon")
-        meta(name="description", content="This section shows up in Search engines as description")
+        meta(name="description", content=siteDescription)
         //- Meta defined for Facebook Open Graph Data (OG)
         meta(property="og:image", content="icons/android-chrome-512x512.png")
-        meta(property="og:description", content="This section shows up in Facebook website as description")
-        meta(property="og:title", content="Mozilla Developer Network")
+        meta(property="og:description", content=facebookDescription)
+        meta(property="og:title", content=facebookTitle)
         //- Title
         block title
         //- Styles
