@@ -41,7 +41,7 @@ gulp.task('humans_file', function () {
         'Components: jQuery, Bootstrap, Fontawesome',
         'Software: Visual Studio Code'
       ],
-      note: 'Built with love by Tej Kahlon.'
+      note: 'Built with love by Damon Bauer (Forked by Tej Kahlon).'
     }))
     .pipe(gulp.dest('./dist/'));
 });
