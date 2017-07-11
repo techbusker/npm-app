@@ -48,6 +48,6 @@ Create a new directory with name `media` inside `app` directory. Please store an
     3.  default.pug
     4.  All files under `pages` folder
 2.  Remove HTML Inspector declaration inside `default.pug`. HTML Inspector is for testing purposes only and should not be included in production version.
-### 6. What additional steps to take into consideratin while coding an application using this framework?
+### 6. What additional steps to take into consideration while coding an application using this framework?
 1.  Please use `https://` protocol for any third-party library/resource included in `default.pug`. Please follow this approach while importing Google fonts in `style.scss`.
 2.  Please use HTTP2 `defer` or `async` attributes when you want to load scripts in document's `head`.
