@@ -50,15 +50,13 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 600;
 $font-weight-black: 700;
+
+// Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
 // STANDARD COLORS
 $black: #000;
 $white: #fff;
 $green: #2bca7f;
 $grey: #999;
-// USED COLORS.
-// Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
-$primary-color: $grey;
-$secondary-color: $grey;
 
 // SELECTION COLOR DECLARATION - https://css-tricks.com/almanac/selectors/s/selection/
 *::-moz-selection,
