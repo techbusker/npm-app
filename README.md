@@ -11,19 +11,20 @@ Web App Kit is a boilerplate to create Front-End web applications based on Boots
 | HTML Linting | HTML Linting is done using [HTML Inspector](https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js). Please check your Browser console for HTML based errors.
 | SCSS Linting | SCSS Linting is done using [Stylelint](https://www.npmjs.com/package/stylelint).
 | JavaScript Linting | JavaScript Linting is done using [ESLint](https://eslint.org).
+| Bootstrap Linting | Bootstrap Linting is done using [Bootlint](https://www.npmjs.com/package/bootlint).
 | Cross Device Sync | [BrowserSync](https://www.browsersync.io) server for viewing your site locally while you develop.
 | Offline Support | Support for fetching Google Web Fonts locally to maintain your site's fonts for Intranet based applications using [Google Fonts Plugin](https://www.npmjs.com/package/gulp-google-webfonts).
 | NPM Plugins | Usage of [NPM Library](https://www.npmjs.com/package/package) to fetch addon libraries like jQuery, Bootstrap etc.
-| Addons | [Bootstrap Select](https://silviomoreto.github.io/bootstrap-select) library included with this boilerplate.
+| Addons | [Bootstrap Select](https://silviomoreto.github.io/bootstrap-select), [FontAwesome](http://fontawesome.io/icons), [Real Favicon](http://realfavicongenerator.net), [jQuery](http://jquery.com), [HTML5Shiv](https://www.npmjs.com/package/html5shiv), [Humans file generator](https://www.npmjs.com/package/gulp-humans), [Robots file generator](https://www.npmjs.com/package/gulp-robots) libraries included with this boilerplate.
 
 ### FAQS
 #### What are the steps to clone and run this boilerplate?
-Create a new directory on your machine: `mkdir ~/Desktop/my-app`.
-Open the directory using terminal: `cd my-app`.
-Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`.
+Create a new directory on your machine: `mkdir ~/Desktop/my-app`
+Open the directory using terminal: `cd my-app`
+Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`
 Run: `npm i`
 #### What if I get Administrative authentication errors?
-Use the following command: `sudo chown -R $(whoami) ~/.npm`.
+Use the following command: `sudo chown -R $(whoami) ~/.npm`
 Works on Mac/Linux.
 #### How to remove UNCSS feature?
 In the `package.json` file:
