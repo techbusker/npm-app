@@ -18,12 +18,12 @@ Web App Kit is a boilerplate to create Front-End web applications based on Boots
 
 ### FAQS
 #### What are the steps to clone and run this boilerplate?
-Create a new directory on your machine: `mkdir ~/Desktop/my-app`
-Open the directory using terminal: `cd my-app`
-Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`
+Create a new directory on your machine: `mkdir ~/Desktop/my-app`.
+Open the directory using terminal: `cd my-app`.
+Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`.
 Run: `npm i`
 #### What if I get Administrative authentication errors?
-Use the following command: `sudo chown -R $(whoami) ~/.npm`
+Use the following command: `sudo chown -R $(whoami) ~/.npm`.
 Works on Mac/Linux.
 #### How to remove UNCSS feature?
 In the `package.json` file:
