@@ -34,14 +34,15 @@ gulp.task('humans_file', function () {
     .pipe(humans({
       thanks: [
         'Node (@nodejs on Twitter)',
-        'Gulp (@gulpjs on Twitter)'
+        'Gulp (@gulpjs on Twitter)',
+        'Damon Bauer (@damon_bauer on Twitter)'
       ],
       site: [
-        'Standards: HTML5, CSS3',
-        'Components: jQuery, Bootstrap, Fontawesome',
+        'Standards: HTML5, CSS3, SVG',
+        'Components: jQuery, Bootstrap, Fontawesome, Real Favicon, HTML5Shiv, Bootstrap Select, Google Fonts',
         'Software: Visual Studio Code'
       ],
-      note: 'Built with love by Damon Bauer (Forked by Tej Kahlon).'
+      note: 'Built with love by Damon Bauer.'
     }))
     .pipe(gulp.dest('./dist/'));
 });

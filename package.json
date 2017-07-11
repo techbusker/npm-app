@@ -1,14 +1,14 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "description": "Description of the project.",
-  "author": "Damon Bauer (Forked by Tej Kahlon)",
+  "name": "application",
+  "version": "1.0",
+  "description": "A few words about this application.",
+  "author": "Tej Kahlon",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/damonbauer/npm-build-boilerplate"
+    "url": "https://github.com/tpkahlon/npm-app"
   },
-  "bugs": "https://github.com/damonbauer/npm-build-boilerplate/issues",
+  "bugs": "https://github.com/tpkahlon/npm-app/issues",
   "keywords": [
     "npm",
     "scripts",
@@ -31,7 +31,7 @@
     "scss": "node-sass --output-style compressed -o dist/css app/sass",
     "lint-scss": "stylelint app/sass/**/*.scss --syntax scss || true",
     "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*.css",
-    "styles": "run-s lint-scss scss autoprefixer uncss",
+    "styles": "run-s lint-scss scss autoprefixer",
     "uncss": "run-s uncss_bootstrap uncss_style",
     "uncss_bootstrap": "uncss dist/*.html -H dist -C css -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"bootstrap.css\" -S \"style.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/bootstrap.min.css",
     "uncss_style": "uncss dist/*.html -C css -H dist -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"style.css\" -S \"bootstrap.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/style.min.css",
@@ -84,7 +84,6 @@
     "stylelint": "^7.9.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "^0.7.2",
-    "uglify-js": "^2.8.15",
-    "uncss": "^0.14.1"
+    "uglify-js": "^2.8.15"
   }
 }
