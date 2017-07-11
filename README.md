@@ -1,7 +1,12 @@
 # Overview
 Web App Kit is a boilerplate to create Front-End web applications based on Bootstrap. It has all the essential tools for building high-quality, cross-platform, responsive web pages.
 
+### Technologies used
+---
+![HTML5](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/html-64.png)&nbsp;&nbsp;![CSS3](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/css-64.png)&nbsp;&nbsp;![Node](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-64.png)&nbsp;&nbsp;![Bootstrap](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/boostrap-64.png)&nbsp;&nbsp;![SASS](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/sass-64.png)&nbsp;&nbsp;![jQuery](https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/jquery-64.png)
+
 ### Features
+---
 | Feature | Summary |
 | --- | --- |
 | NPM Scripts | Workflow for this boilerplate is based on Damon Bauer's article: [Why NPM Scripts?](https://css-tricks.com/why-npm-scripts). Generate, minify and concatenate JavaScript, HTML, CSS, Images, Icons using one commmand to help keep your workflow straightforward. Run `npm i` or `npm run install` or `npm run all` to kickstart boilerplate.
@@ -18,17 +23,18 @@ Web App Kit is a boilerplate to create Front-End web applications based on Boots
 | Addons | [Bootstrap Select](https://silviomoreto.github.io/bootstrap-select), [FontAwesome](http://fontawesome.io/icons), [Real Favicon](http://realfavicongenerator.net), [jQuery](http://jquery.com), [HTML5Shiv](https://www.npmjs.com/package/html5shiv), [Humans file generator](https://www.npmjs.com/package/gulp-humans), [Robots file generator](https://www.npmjs.com/package/gulp-robots) libraries included with this boilerplate.
 
 ### FAQS
-#### What are the steps to clone and run this boilerplate?
-Create a new directory on your machine: `mkdir ~/Desktop/my-app`
-Open the directory using terminal: `cd my-app`
-Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`
-Run: `npm i`
-#### What if I get Administrative authentication errors?
-Use the following command: `sudo chown -R $(whoami) ~/.npm`
-Works on Mac/Linux.
-#### How to remove UNCSS feature?
-In the `package.json` file:
+---
+#### 1. What are the steps to clone and run this boilerplate?
+1.  Create a new directory on your machine: `mkdir ~/Desktop/my-app`.
+2.  Open the directory using terminal: `cd my-app`.
+3.  Clone this repository: `git clone https://github.com/tpkahlon/npm-app.git .`.
+4.  Run: `npm i`.
+#### 2. What if I get Administrative authentication errors?
+*Works on Mac/Linux.*  
+Use the following command: `sudo chown -R $(whoami) ~/.npm`.
+#### 3. How to remove UNCSS feature?
+1.  In the `package.json` file:
 Please remove `uncss` from `autoprefixer` task. In the same file, Please remove `uncss_bootstrap` and `uncss_style` tasks.
-In the `app/pug/_layouts/default.pug` file: 
+2.  In the `app/pug/_layouts/default.pug` file: 
 Rename location for following stylesheets: `bootstrap.min.css to bootstrap.css` and `style.min.css to style.css`.
-Go to root path of your application, Run the following command: `npm uninstall --save-dev uncss` to remove uncss plugin and dependencies.
+3.  Go to root path of your application, Run the following command: `npm uninstall --save-dev uncss` to remove uncss plugin and dependencies.
