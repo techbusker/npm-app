@@ -1,100 +1,6 @@
 // BASE.scss
-// MEDIA QUERIES DECLARATION
-// FONT SIZE MIXIN DECLARATION
-// VARIABLES DECLARATION
-// SELECTION COLOR DECLARATION
-// HYPERLINK MIXIN DECLARATION
-// BOOTSTRAP FIXES
-// HELPERS
 
-// MEDIA QUERIES DECLARATION
-$mobile: "only screen and (max-width: 480px)";
-$phablet: "only screen and (max-width: 768px)";
-$tablet: "only screen and (max-width: 992px)";
-$desktop: "only screen and (max-width: 1200px)";
-$mobile__up: "only screen and (min-width: 480px)";
-$phablet__up: "only screen and (min-width: 768px)";
-$tablet__up: "only screen and (min-width: 992px)";
-$desktop__up: "only screen and (min-width: 1200px)";
-
-// FONT SIZE MIXIN DECLARATION
-@mixin font-size($sizeValue: 16) {
-  font-size: ($sizeValue) + px;
-  font-size: ($sizeValue / 16) + rem;
-}
-
-// VARIABLES DECLARATION
-// PIXELS
-$px_one: 1px;
-$px_two: 2px;
-$px_three: 3px;
-$px_four: 4px;
-$px_five: 5px;
-$px_six: 6px;
-$px_seven: 7px;
-$px_eight: 8px;
-$px_nine: 9px;
-$px_ten: 10px;
-$px_eleven: 11px;
-$px_twelve: 12px;
-$px_thirteen: 13px;
-$px_fourteen: 14px;
-$px_fifteen: 15px;
-// FONT SIZES
-$font-size-small: $px_twelve; //// 12px
-$font-size-regular: $px_twelve+$px_four; //// 16px
-$font-size-large: $px_fourteen+$px_ten; //// 24px
-// FONT WEIGHTS
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 600;
-$font-weight-black: 700;
-
-// Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
-// STANDARD COLORS
-$black: #000;
-$white: #fff;
-$green: #2bca7f;
-$grey: #999;
-
-// SELECTION COLOR DECLARATION - https://css-tricks.com/almanac/selectors/s/selection/
-*::-moz-selection,
-*::selection {
-  color: $white;
-  background-color: $black;
-}
-
-// HYPERLINK MIXIN DECLARATION
-@mixin linx($link, $visit, $hover, $active) {
-  a {
-    color: $link;
-    transition: all .6s;
-    &:visited {
-      color: $visit;
-    }
-    &:hover {
-      color: $hover;
-    }
-    &:active {
-      color: $active;
-    }
-  }
-}
-
-// BOOTSTRAP FIXES
-/*
- * IE10 viewport hack for Surface/desktop Windows 8 bug
- * Copyright 2014-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * See the Getting Started docs for more information:
- * http://getbootstrap.com/getting-started/#support-ie10-width
-*/
-@-ms-viewport     { width: device-width; }
-@-o-viewport      { width: device-width; }
-@viewport         { width: device-width; }
-
-// HELPERS
+// HELPER GUIDE
 
 /* -- SHORTHAND NOTATIONS
 * background: #000 url(images/bg.gif) no-repeat top right;
@@ -104,7 +10,11 @@ $grey: #999;
 */
 
 /* -- DECLARATION ORDER
-* Positioning, Z-index |||| Box-Model, Floats, Size |||| Typography, Color, Alignment |||| Visual, Border |||| Misc 
+* Positioning, Z-index
+  Box-Model, Floats, Size
+  Typography, Color, Alignment
+  Visual, Border
+  Additional 
 */
 
 /* -- THIRD PARTY LINKS FOR HTML
@@ -128,3 +38,63 @@ CSS Tricks: https://css-tricks.com/
 CSS Values: http://cssvalues.com/
 SCSS Guide: http://thesassway.com/
 */
+
+// MEDIA QUERIES DECLARATION
+// FONT SIZE MIXIN DECLARATION
+// VARIABLES DECLARATION
+// SELECTION COLOR DECLARATION
+// HYPERLINK MIXIN DECLARATION
+// BOOTSTRAP FIXES
+// HELPERS
+
+// MEDIA QUERIES DECLARATION
+$mobile: "only screen and (max-width: 480px)";
+$phablet: "only screen and (max-width: 768px)";
+$tablet: "only screen and (max-width: 992px)";
+$desktop: "only screen and (max-width: 1200px)";
+$mobile__up: "only screen and (min-width: 480px)";
+$phablet__up: "only screen and (min-width: 768px)";
+$tablet__up: "only screen and (min-width: 992px)";
+$desktop__up: "only screen and (min-width: 1200px)";
+
+// FONT SIZE MIXIN DECLARATION
+@mixin font-size($sizeValue: 16) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue / 16) + rem;
+}
+// FONT WEIGHTS
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 600;
+$fw-black: 700;
+
+// Please declare color names with postfix -color. See more - http://thesassway.com/beginner/variable-naming
+// STANDARD COLORS
+$black: #000;
+$white: #fff;
+// BOOTSTRAP COLORS
+$blue: #428bca;
+$green: #5cb85c;
+$skyblue: #5bc0de;
+$orange: #f0ad4e;
+$red: #d9534f;
+
+// SELECTION COLOR DECLARATION - https://css-tricks.com/almanac/selectors/s/selection/
+*::-moz-selection,
+*::selection {
+  color: $white;
+  background-color: $black;
+}
+
+// BOOTSTRAP FIXES
+/*
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+*/
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }

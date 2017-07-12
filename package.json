@@ -18,6 +18,11 @@
     "compress"
   ],
   "scripts": {
+    "uncss": "run-s uncss_bootstrap uncss_style",
+    "uncss_bootstrap": "uncss dist/*.html -H dist -C css -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"bootstrap.css\" -S \"style.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/bootstrap.min.css",
+    "uncss_style": "uncss dist/*.html -C css -H dist -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"style.css\" -S \"bootstrap.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/style.min.css",
+    "bs": "copyfiles -f node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss app/sass/",
+    "bsx": "rimraf app/sass/_variables.scss",
     "clean": "rimraf dist",
     "gulp": "gulp",
     "favicon-generate": "real-favicon generate faviconDescription.json faviconData.json dist/icons/",
@@ -31,10 +36,7 @@
     "scss": "node-sass --output-style compressed -o dist/css app/sass",
     "lint-scss": "stylelint app/sass/**/*.scss --syntax scss || true",
     "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*.css",
-    "styles": "run-s lint-scss scss autoprefixer",
-    "uncss": "run-s uncss_bootstrap uncss_style",
-    "uncss_bootstrap": "uncss dist/*.html -H dist -C css -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"bootstrap.css\" -S \"style.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/bootstrap.min.css",
-    "uncss_style": "uncss dist/*.html -C css -H dist -i [/.affix/,/.alert/,/.close/,/.collapse/,/.fade/,/.has/,/.help/,/.in/,/.modal/,/.open/,/.popover/,/.tooltip/] -s \"style.css\" -S \"bootstrap.css\",\"fonts.css\",\"vendor/*.css\" > dist/css/style.min.css",
+    "styles": "run-s lint-scss scss autoprefixer",    
     "lint": "eslint app/js/custom.js || true",
     "uglify": "mkdirp dist/js -p && uglifyjs app/js/custom.js -c -o dist/js/custom.js",
     "scripts": "run-s lint uglify",

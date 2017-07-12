@@ -15,12 +15,12 @@
 @import "components/bootstrap";
 
 // PRIMARY - ADDONS
-// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+// BOOTSTRAP - ADDONS (Import SCSS below)
 
 // SECONDARY
 @import "components/layout";
