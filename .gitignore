@@ -3,6 +3,7 @@ dist
 node_modules
 npm-debug.log
 .sass-cache
+faviconData.json
 
 # Visual Studio Code | Sass | RUBY | NODE | MacOS
 
