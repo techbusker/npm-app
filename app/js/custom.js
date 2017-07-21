@@ -1,3 +1,3 @@
-// Code to run when the document is ready.
-console.log( "Hello World!" );
+// App.js
 
+$("video, audio").mediaelementplayer();

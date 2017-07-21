@@ -21,6 +21,7 @@ Web App Kit is a boilerplate to create Front-End web applications based on Boots
 | Offline Support | Support for fetching Google Web Fonts locally to maintain your site's fonts for Intranet based applications using [Google Fonts Plugin](https://www.npmjs.com/package/gulp-google-webfonts).
 | NPM Plugins | Usage of [NPM Library](https://www.npmjs.com/package/package) to fetch addon libraries like jQuery, Bootstrap etc.
 | Addons | [Bootstrap Select](https://silviomoreto.github.io/bootstrap-select), [FontAwesome](http://fontawesome.io/icons), [Real Favicon](http://realfavicongenerator.net), [jQuery](http://jquery.com), [HTML5Shiv](https://www.npmjs.com/package/html5shiv), [Humans file generator](https://www.npmjs.com/package/gulp-humans), [Robots file generator](https://www.npmjs.com/package/gulp-robots) libraries included with this boilerplate.
+| Audio/Video | Usage of [MediaElement.js](https://www.mediaelementjs.com/) for cross browser player rendering.
 
 # FAQS
 
