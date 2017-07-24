@@ -1,35 +1,39 @@
 // Declaration
-var gulp = require('gulp');
-var robots = require('gulp-robots');
-var humans = require('gulp-humans');
-var googleWebFonts = require('gulp-google-webfonts');
+const gulp = require('gulp');
+const robots = require('gulp-robots');
+const humans = require('gulp-humans');
+const googleWebFonts = require('gulp-google-webfonts');
 
-/* Download Google fonts to local app.
+/* Declaration for google_fonts TASK.
    Source: https://www.npmjs.com/package/gulp-google-webfonts */
-var options = {
-  fontsDir: '../fonts/',
-	cssDir: './',
+const options = {
+  fontsDirectory: '../fonts/',
+	cssDirectory: './',
 	cssFilename: 'fonts.css'
 };
-gulp.task('google_fonts', function () {
+
+/* Generate Google Fonts css file.
+   Source: https://www.npmjs.com/package/gulp-google-webfonts */
+gulp.task('google_fonts', () => {
   return gulp.src('./fonts.list')
-  	.pipe(googleWebFonts(options))
-  	.pipe(gulp.dest('dist/css/'));
+  .pipe(googleWebFonts(options))
+  .pipe(gulp.dest('dist/css/'));
 });
 
 /* Generate robots.txt file.
    Source: https://www.npmjs.com/package/gulp-robots */
-gulp.task('robots_file', function () {
+gulp.task('robots_file', () => {
   gulp.src('dist/index.html')
-    .pipe(robots({
-      useragent: '*',
-      // allow: ['folder1/', 'folder2/'],
-      disallow: ['cgi-bin/']
-    }))
-    .pipe(gulp.dest('dist'));
+  .pipe(robots({
+    useragent: '*',
+    disallow: ['cgi-bin/']
+  }))
+  .pipe(gulp.dest('dist'));
 });
 
-gulp.task('humans_file', function () {
+/* Generate humans.txt file.
+   Source: https://www.npmjs.com/package/gulp-humans */
+gulp.task('humans_file', () => {
   gulp.src('./dist/index.html')
     .pipe(humans({
       thanks: [
@@ -48,4 +52,8 @@ gulp.task('humans_file', function () {
 });
 
 // Default
-gulp.task('default', [ 'robots_file', 'humans_file', 'google_fonts']);
+gulp.task('default', [ 
+  'robots_file', 
+  'humans_file', 
+  'google_fonts'
+]);
