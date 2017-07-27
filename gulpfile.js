@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const robots = require('gulp-robots');
 const humans = require('gulp-humans');
 const googleWebFonts = require('gulp-google-webfonts');
+const imagemin = require('gulp-imagemin');
 
 /* Declaration for google_fonts TASK.
    Source: https://www.npmjs.com/package/gulp-google-webfonts */
@@ -11,14 +12,6 @@ const options = {
 	cssDirectory: './',
 	cssFilename: 'fonts.css'
 };
-
-/* Generate Google Fonts css file.
-   Source: https://www.npmjs.com/package/gulp-google-webfonts */
-gulp.task('google_fonts', () => {
-  return gulp.src('./fonts.list')
-  .pipe(googleWebFonts(options))
-  .pipe(gulp.dest('dist/css/'));
-});
 
 /* Generate robots.txt file.
    Source: https://www.npmjs.com/package/gulp-robots */
@@ -51,9 +44,30 @@ gulp.task('humans_file', () => {
     .pipe(gulp.dest('./dist/'));
 });
 
+/* Generate Google Fonts css file.
+   Source: https://www.npmjs.com/package/gulp-google-webfonts */
+gulp.task('google_fonts', () => {
+  return gulp.src('./fonts.list')
+  .pipe(googleWebFonts(options))
+  .pipe(gulp.dest('dist/css/'));
+});
+
+/* Generate optimized images.
+   Source: https://github.com/sindresorhus/gulp-imagemin */
+gulp.task('images', () => {
+  return gulp.src('./app/images/*')
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true, optimizationLevel: 2}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3})
+  ]))
+  .pipe(gulp.dest('dist/images/'));
+});
+
 // Default
 gulp.task('default', [ 
   'robots_file', 
   'humans_file', 
-  'google_fonts'
+  'google_fonts',
+  'images'
 ]);
