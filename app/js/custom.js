@@ -1,6 +1,9 @@
 "use strict";
 
-let slang = "Eh!";
-const song = "Hello World";
+const SLANG = "Eh! ";
+const SPEAK = "Today, The weather is: ";
+let weather = 100;
+
+document.querySelector(".msg").textContent = SLANG + SPEAK + weather;
 
 $("video, audio").mediaelementplayer();
