@@ -1,4 +1,5 @@
-// Declaration
+"use strict";
+
 const gulp = require('gulp');
 const robots = require('gulp-robots');
 const humans = require('gulp-humans');
@@ -59,7 +60,7 @@ gulp.task('images', () => {
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true, optimizationLevel: 2}),
     imagemin.jpegtran({progressive: true}),
-    imagemin.optipng({optimizationLevel: 3})
+    imagemin.optipng({optimizationLevel: 5})
   ]))
   .pipe(gulp.dest('dist/images/'));
 });
