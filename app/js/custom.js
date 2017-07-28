@@ -1,9 +1,23 @@
+//========================
+// Strict Syntax Rendering
+//========================
 "use strict";
 
-const SLANG = "Eh! ";
-const SPEAK = "Today, The weather is: ";
-let weather = 100;
+//==================
+// Application Logic
+//==================
+var myApp = {};
+myApp.init = () => {
+	const SLANG = "Eh! ";
+	const SPEAK = "Today, The weather is: ";
+	let weather = 100;
+	document.querySelector(".msg").textContent = SLANG + SPEAK + weather;
+	$("video, audio").mediaelementplayer();
+};
 
-document.querySelector(".msg").textContent = SLANG + SPEAK + weather;
-
-$("video, audio").mediaelementplayer();
+//===============
+// Initialization
+//===============
+$(function() {
+	myApp.init();
+});
