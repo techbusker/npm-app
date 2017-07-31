@@ -50,7 +50,7 @@ gulp.task('humans_file', () => {
 gulp.task('google_fonts', () => {
   return gulp.src('./fonts.list')
   .pipe(googleWebFonts(options))
-  .pipe(gulp.dest('dist/css/'));
+  .pipe(gulp.dest('dist/fonts/'));
 });
 
 /* Generate optimized images.
