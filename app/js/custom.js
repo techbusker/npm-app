@@ -13,6 +13,7 @@ myApp.init = () => {
 	let weather = 100;
 	document.querySelector(".msg").textContent = SLANG + SPEAK + weather;
 	$("video, audio").mediaelementplayer();
+	$("#myForm").validator();
 };
 
 //===============
