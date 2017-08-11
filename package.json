@@ -44,7 +44,7 @@
     "uglify": "uglifyjs dist/js/custom.js -cmo dist/js/custom.js",
     "svgs": "svgo -f app/images/icons -o dist/images/icons && npm run sprites",
     "sprites": "svg-sprite-generate -d app/images/icons -o dist/images/sprite.svg",
-    "html": "pug --pretty app/pug/pages/*.pug -o dist && run-s favicon-html bootlint beautify minifier",
+    "html": "pug --pretty app/pug/pages/*.pug -o dist && run-s favicon-html bootlint beautify",
     "minifier": "html-minifier --input-dir dist/ --output-dir dist/ --file-ext html --collapse-whitespace --remove-comments --minify-js --minify-css",
     "bootlint": "bootlint ./dist/*.html || true",
     "beautify": "js-beautify -qrtf ./dist/*.html",
@@ -53,7 +53,7 @@
     "watch:css": "onchange \"app/sass\" -- run-s styles",
     "watch:js": "onchange \"app/js\" -- run-s scripts",
     "watch:html": "onchange \"app/pug/_includes\" \"app/pug/_layouts\" \"app/pug/_partials\" \"app/pug/pages\" -- run-s html",
-    "watch:images": "onchange \"app/images\" -- run-s images",
+    "watch:images": "onchange \"app/images\" -- run-s gulp svgs",
     "watch:fonts": "onchange \"dist/fonts\" -- run-s fonts",
     "watch": "run-p serve watch:*",
     "postinstall": "run-s all"
